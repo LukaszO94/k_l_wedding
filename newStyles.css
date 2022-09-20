@@ -4,10 +4,11 @@
     /*border: 1px solid black;*/
 }
 body {
-    background: rgb(0,106,78);
-background: linear-gradient(180deg, rgba(0,106,78,1) 0%, rgba(86,130,139,0.7665660014005602) 68%, rgba(255,255,255,1) 100%);
+   /* background: rgb(0,106,78);
+background: linear-gradient(180deg, rgba(0,106,78,1) 0%, rgba(86,130,139,0.7665660014005602) 68%, rgba(255,255,255,1) 100%);*/
+background-color: #254636;
 
-height: 300vh;
+height: 200vh;
 
 }
 nav {
@@ -21,7 +22,10 @@ nav {
     align-items: center;
     z-index: 1;
     border-bottom: 1px solid goldenrod;
-    background-color: rgba(42, 56, 24, 0.8);
+    /*background: rgb(242,238,238);
+background: radial-gradient(circle, rgba(242,238,238,1) 58%, rgba(233,233,233,0.9766500350140056) 70%, rgba(211,240,233,1) 100%);*/
+background-color: rgb(78, 109, 65);
+color: rgb(177, 142, 54);
 }
 nav ul {
     display: flex;
@@ -40,6 +44,12 @@ nav ul li button {
 }
 .logo {
     font-size: 3vw;;
+    font-family: 'Parisienne', cursive;
+    font-size: 4vw;
+    border: 1px solid rgb(177, 142, 54);
+    border-radius: 48%;
+    padding: 0 5vw;
+    margin-bottom: 1vw;
 }
 .wrapper{
     position: relative;
@@ -71,6 +81,19 @@ align-items: center;
     justify-content: center;
     align-items: center;
 }
+#tables {
+    display: none;
+    justify-content: center;
+    align-content: center;
+}
+.stol {
+    text-align: center;
+    font-size: 3vh;
+    background-color: #E1E6CE;
+    border: 2px solid seagreen;
+    padding: 4vw;
+    border-radius: 15px;
+}
 #dziekujemy {
     font-size: 10vw;
     font-family: 'Parisienne', cursive;
@@ -97,13 +120,13 @@ align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
+    width: 70%;
     margin: 5vw auto;
     list-style-position: inside;
     font-family: 'Noto Serif JP', serif;
     color: rgb(50, 43, 23);
-    background-color: rgba(130, 233, 0, 10%);
-    border: 1vw solid rgb(44, 44, 44);
+    background-color: rgb(78, 109, 65);
+    border: 2px solid rgba(255, 217, 0, 0.55);
     border-radius: 10px;
     filter: drop-shadow(0 0 15px rgb(17, 15, 10));
 }
@@ -114,10 +137,15 @@ align-items: center;
 #message {
     display: flex;
     align-items: center;
-    height: 5vw;
+    height: 8vw;
+    background-color: #254636;
     justify-content: center;
-    font-size: 2vw;
-    margin: 0.5vw auto;
+    font-size: 3vw;
+    font-weight: bold;
+    margin: 1vw 1vw;
+    border: 2px solid rgba(255, 217, 0, 0.55);
+    border-radius: 5px;
+    color: rgb(177, 142, 54);
 }
 .instrukcja {
     display: flex;
@@ -129,6 +157,15 @@ align-items: center;
 .loteria button {
     all:unset;
     text-align: center;
+    align-self: center;
     font-size: 4vw;
     font-weight: bold;
+    border: 1px solid rgb(51, 49, 49);
+    border-radius: 15px;
+    width: 20vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+.loteria button:hover {
+    background-color: rgba(85, 107, 47, 0.708);
 }

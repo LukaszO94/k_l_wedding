@@ -14,12 +14,13 @@
     <nav>
         <ul>
             <li><button onclick="myFunction1()" id="Schedule">&nbsp;Schedule&nbsp;</button></li>
-            <li><button onclick="myFunction2()" id="Tables">&nbsp;Tables&nbsp;</button></li>
+            
         </ul>
         <span class="logo">Klaudia & Łukasz</span>
         <ul>
-            <li><button onclick="myFunction3()" id="Location">&nbsp;Location&nbsp;</button></li>
-            <li><button onclick="myFunction4()" id="Contacts">&nbsp;Contacts&nbsp;</button></li>
+            <li><button onclick="myFunction2()" id="Tables">&nbsp;Tables&nbsp;</button></li>
+            <!--<li><button onclick="myFunction3()" id="Location">&nbsp;Location&nbsp;</button></li>
+            <li><button onclick="myFunction4()" id="Contacts">&nbsp;Contacts&nbsp;</button></li>-->
         </ul>
     </nav>
     <script src="./javascript.js"></script>
@@ -39,7 +40,7 @@
                     <p>Drugie danie</p>
                 </div>   
                 <div class="pop" id="tables" hidden>
-                    <div class="pierwszy">
+                    <div class="stol pierwszy">
                         <h4>Stół 1</h4>
                         <p>Dorota Wąsowska<br>
 Piotr Wąsowski<br>
@@ -60,11 +61,7 @@ Michał Giziński<br>
                     This is my contacts element.
                 </div>
             </div>
-            <div class="default">
-                <p id="dziekujemy">Dziękujemy</p>
-                <p id="przybycie">Za przybycie</p>
-            </div>
-            
+           
         </div>
         <div class="loteria">
             <span class="heading">Zagraj</span>
@@ -75,7 +72,7 @@ Michał Giziński<br>
                 <li>Wykonaj je</li>
                 <li>Zrób zdjęcie na dowód</li>
             </ol>
-            <p>Pierwsze trzy które wykona 6 zadań dostaną nagrody specjalne</p>
+            <p>Pierwsze trzy osoby które wykonają 6 zadań - WYGRYWA!</p>
             <h4>Do dzieła</h4>
             </div>
             <button onclick='display()' id="lottery">Losuj</button>
@@ -83,6 +80,11 @@ Michał Giziński<br>
                 <p id="message"></p>
             </form>
         </div>
+        
+    </div>
+    <div class="default">
+        <p id="dziekujemy">Dziękujemy</p>
+        <p id="przybycie">Za przybycie</p>
     </div>
 </body>
 </html>
