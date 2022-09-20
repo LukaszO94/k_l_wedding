@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./newStyles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&family=Parisienne&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -25,10 +28,30 @@
         <div class="content"></div>
             <div class="popups">
                 <div class="pop" id="schedule" hidden>
-                    This is my schedule element.
+                    <h2>Party Schedule</h2>
+                    <h3>19:00</h3>
+                    <p>Start, zupa oraz pierwsze danie<br>Rosół z kluskami<br>Kotlet de volaille</p>
+                    <p>Start, dish and first course<br>Chicken soup<br>de volaille</p>
+                    <h3>20:00</h3>
+                    <p>Pierwszy Taniec</p>
+                    <p>First dance</p>
+                    <h3>21:00</h3>
+                    <p>Drugie danie</p>
                 </div>   
                 <div class="pop" id="tables" hidden>
-                    This is my tables element.
+                    <div class="pierwszy">
+                        <h4>Stół 1</h4>
+                        <p>Dorota Wąsowska<br>
+Piotr Wąsowski<br>
+Katarzyna Ochnio<br>
+Grzegorz Tomasik<br>
+Igor Ochnio<br>
+Magda Tadych<br>
+Helena Ochnio<br>
+Zuzia Ochnio<br>
+Michał Giziński<br>
+                            Scott Callaway</p>
+                    </div>
                 </div>   
                 <div class="pop" id="location" hidden>
                     This is my location element.
@@ -41,7 +64,24 @@
                 <p id="dziekujemy">Dziękujemy</p>
                 <p id="przybycie">Za przybycie</p>
             </div>
-
+            
+        </div>
+        <div class="loteria">
+            <span class="heading">Zagraj</span>
+            <div class="instrukcja">
+            <p>Przedstawiamy weselne wyzwania<br>zasady są proste:</p>
+            <ol>
+                <li>Wylosuj zadanie</li>
+                <li>Wykonaj je</li>
+                <li>Zrób zdjęcie na dowód</li>
+            </ol>
+            <p>Pierwsze trzy które wykona 6 zadań dostaną nagrody specjalne</p>
+            <h4>Do dzieła</h4>
+            </div>
+            <button onclick='display()' id="lottery">Losuj</button>
+            <form>
+                <p id="message"></p>
+            </form>
         </div>
     </div>
 </body>
