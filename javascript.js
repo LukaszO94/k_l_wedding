@@ -91,3 +91,16 @@ function myFunction1() {
   document.getElementById("message").innerHTML = task();
   
 }
+
+//const tag = document.createElement("p");
+const goscie = ['Dorota Wąsowska', 'Piotr Wąsowski', 'Katarzyna Ochnio', 'Grzegorz Tomasik', 'Igor Ochnio', ' Magda Tadych', 'Helena Ochnio', 'Zuzia Ochnio' , 'Michał Giziński', 'Scott Callaway'];
+//tag.appendChild(goscie[0]);
+//const element = document.getElementById('gosc');
+//element.appendChild(tag);
+
+const data = [5,6,7,8,9];
+const list  = document.getElementById('gosc');
+ 
+window.onload = () => {
+  list.innerHTML = data.map(i => `<li>${i}</li>`).join('');
+};

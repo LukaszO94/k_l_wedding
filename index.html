@@ -7,84 +7,251 @@
     <link href="./newStyles.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&family=Parisienne&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Document</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&family=Parisienne&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Ślub Klaudia & Łukasz</title>
 </head>
 <body>
+
     <nav>
         <ul>
             <li><button onclick="myFunction1()" id="Schedule">&nbsp;Schedule&nbsp;</button></li>
             
         </ul>
-        <span class="logo">Klaudia & Łukasz</span>
+        <span class="logo">K & Ł</span>
         <ul>
-            <li><button onclick="myFunction2()" id="Tables">&nbsp;Tables&nbsp;</button></li>
+            <li><button onclick="myFunction2()" id="Tables" onclick="guestSit()">&nbsp;Tables&nbsp;</button></li>
             <!--<li><button onclick="myFunction3()" id="Location">&nbsp;Location&nbsp;</button></li>
             <li><button onclick="myFunction4()" id="Contacts">&nbsp;Contacts&nbsp;</button></li>-->
         </ul>
     </nav>
     <script src="./javascript.js"></script>
-    <div class="wrapper">
-        
-        <div class="content"></div>
-            <div class="popups">
-                <div class="pop" id="schedule" hidden>
-                    <h2>Party Schedule</h2>
-                    <h3>19:00</h3>
-                    <p>Start, zupa oraz pierwsze danie<br>Rosół z kluskami<br>Kotlet de volaille</p>
-                    <p>Start, dish and first course<br>Chicken soup<br>de volaille</p>
-                    <h3>20:00</h3>
-                    <p>Pierwszy Taniec</p>
-                    <p>First dance</p>
-                    <h3>21:00</h3>
-                    <p>Drugie danie</p>
-                </div>   
-                <div class="pop" id="tables" hidden>
-                    <div class="stol pierwszy">
-                        <h4>Stół 1</h4>
-                        <p>Dorota Wąsowska<br>
-Piotr Wąsowski<br>
-Katarzyna Ochnio<br>
-Grzegorz Tomasik<br>
-Igor Ochnio<br>
-Magda Tadych<br>
-Helena Ochnio<br>
-Zuzia Ochnio<br>
-Michał Giziński<br>
-                            Scott Callaway</p>
+    <div class="merge">
+        <div class="wrapper">
+            
+            <div class="content"></div>
+                <div class="popups">
+                    <div class="pop" id="schedule" hidden>
+                        <h2 class="top">Party Schedule</h2>
+                        <h3 class="time">19:00</h3>
+                        <p class="pl">Start, zupa oraz pierwsze danie<br>Rosół z kluskami<br>Kotlet de volaille</p>
+                        <p class="eng">Start, dish and first course<br>Chicken soup<br>de volaille</p>
+                        <h3 class="time">20:00</h3>
+                        <p class="pl">Pierwszy Taniec</p>
+                        <p class="eng">First dance</p>
+                        <h3 class="time">21:00</h3>
+                        <p class="pl">Drugie danie</p>
+                        <p class="eng">Second course</p>
+                    </div>   
+                    <div class="pop" id="tables" hidden>
+                        <div class="stol pierwszy" id="gosc">
+                            <h4>Stół 1</h4>
+                            <p>Dorota Wąsowska<br>Piotr Wąsowski<br>Katarzyna Ochnio<br>Grzegorz Tomasik<br>Igor Ochnio<br>Magda Tadych<br>Helena Ochnio<br>Zuzia Ochnio<br>Michał Giziński<br>Scott Callaway</p>
+                        </div>
+                        <div class="stol drugi">
+                            <h4>Stół 2</h4>
+                            <p>Karolina Ochnio<br>
+                                Julia Ochnio<br>
+                                Edmund Ochnio<br>
+                                Paulina Sowińska<br>
+                                Piotr Sowiński<br>
+                                Ania O'Brien<br>
+                                Robert Kiliszek<br>
+                                Alicja Kiliszek</p>
+                        </div>
+                        <div class="stol trzeci">
+                            <h4>Stół 3</h4>
+                            <p>Magda Siwek<br>
+                                Jan Siwek<br>
+                                Agnieszka Kruk<br>
+                                Marcin Kruk<br>
+                                Natalia Kruk<br>
+                                Grześ Kruk<br>
+                                Artur Kruk<br>
+                                Ania Przepadło<br>
+                                Damian Przepadło<br>
+                                Franek Przepadło<br>
+                                Ola Przepadło<br>
+                                Zosia Przepadło<br>
+                                Basia Przepadło</p>
+                        </div>
+                        <div class="stol czwarty">
+                            <h4>Stół 4</h4>
+                            <div class="podwojne">
+                            <p>Aleksandra Bylina<br>
+                                Piotr Łuć<br>
+                                Daria Kozłowska<br>
+                                Marcelina Pieniak<br>
+                                Damian Jastrzębski<br>
+                                Paweł Pietraszko<br>
+                                Zuzanna Pietraszko<br>
+                                Karolina Gołębiewska<br>
+                                Øyvind Dahl<br>
+                                Aleksandra Ochnio<br>
+                                Joanna Siwek<br>
+                                Jarosław Kiliszek<br>
+                                Wiktoria Kostur<br>
+                                Martyna Dobosiewicz<br>
+                                Oliwia Dobosiewicz<br>
+                                Osoba Towarzysząca</p>
+                                <p>
+                                Daria Pieniak<br>
+                                Bartosz Dragan<br>
+                                Ula Szczęsna<br>
+                                Michał Przednowek<br>
+                                Piotr Sarnowski<br>
+                                Zosia Sobkowicz - Sarnowska<br>
+                                Paulina Ćwil<br>
+                                Łukasz Kłopotowski<br>
+                                Patrycja Cicha<br>
+                                Osoba Towarzysząca<br>
+                                Aleksander Dąbrowski<br>
+                                Dominik Moroz<br>
+                                Kacper Dąbrowski<br>
+                                Stanisław Wojtiuk<br>
+                                Patryk Gąsiorowski<br>
+                                Osoba Towarzysząca
+                                </p>
+                            </div>
+                        </div>
+                        <div class="stol piaty">
+                            <h4>Stół 5</h4>
+                            <div class="podwojne">
+                                <p>Katarzyna Marciniak<br>
+                                    Maciej Świerczyński<br>
+                                    Paulina Łopieńska<br>
+                                    Łukasz Godlewski<br>
+                                    Justyna Michalik<br>
+                                    Jakub Michalik<br>
+                                    Julia Parszutas<br>
+                                    Jan Smolski<br>
+                                    Marlena Janik<br>
+                                    Kamil Janik<br>
+                                    Ola Wąsowska-Jajczak<br>
+                                    Jakub Jajczak<br>
+                                    Kuba Wąsowski<br>
+                                    Osoba Towarzysząca<br>
+                                    Ewelina Wąsowska<br>
+                                    Osoba Towarzysząca
+                                    <p>
+                                        Magdalena Kaczmarek<br>
+                                        Bartek Dąbrowski<br>
+                                        Angelika Maruszewska<br>
+                                        Arkadiusz Sajnog<br>
+                                        Łukasz Rosa<br>
+                                        Maciek Wysokiński<br>
+                                        Damian Jaczewski<br>
+                                        Osoba Towarzysząca<br>
+                                        Emilia Florowska<br>
+                                        Osoba Towarzysząca<br>
+                                        Patryk Florowski<br>
+                                        Osoba Towarzysząca<br>
+                                        Kamil Pierzchałą<br>
+                                        Ewelina Włudarkiewicz<br>
+                                        Ewelina Popławska<br>
+                                        Arek Popławski
+                                    </p>
+                                </div>
+                        </div>
+                        <div class="stol szosty">
+                            <h4>Stół 6</h4>
+                            <p>Dominika Maszner<br>
+                                Grzegorz Maszner<br>
+                                Franek Maszner<br>
+                                Filip Maszner<br>
+                                Magda Dobosiewicz<br>
+                                Andrzej Dobosiewicz<br>
+                                Anna Felczak<br>
+                                Zuzia Felczak<br>
+                                Kuba Felczak<br>
+                                Eliza Grabek<br>
+                                Waldemar Świerczewski</p>
+                        </div>
+                        <div class="stol siodmy">
+                            <h4>Stół 7</h4>
+                            <p>Anna Florowska<br>
+                                Irek Florowski<br>
+                                Aneta Kalicka<br>
+                                Jacek Kalicki<br>
+                                Halina Pierzchała<br>
+                                Krzysztof Pierzchała<br>
+                                Ewa Patoka<br>
+                                Janusz Patoka<br>
+                                Lucyna Jaczewska<br>
+                                Zbyszek Wojtasik</p>
+                        </div>
+                        <div class="stol osmy">
+                            <h4>Stół 8</h4>
+                            <p>Barbara Dobosiewicz<br>
+                                Antoni Dobosiewicz<br>
+                                Zygmunt Sarnecki<br>
+                                Ewa Wąsowska<br>
+                                Mąż Ewy Wąsowskiej<br>
+                                Grażyna Kacprzyk<br>
+                                Wanda Florowski<br>
+                                Adam Florowska<br>
+                                Irena Wąsowska</p>
+                        </div>
+                        <div class="stol dziewiaty">
+                            <h4>Stół 9</h4>
+                            <p>Małgorzata Głuchowska<br>
+                                Michał Głuchowski<br>
+                                Julia Głuchowska<br>
+                                Urszula Głuchowska<br>
+                                Małgorzata Wąsowska<br>
+                                Andrzej Wąsowski<br>
+                                Aleksandra Wąsowska<br>
+                                Zuzanna Wąsowska<br>
+                                Sylwia Gąsiorowska<br>
+                                Paweł Gąsiorowski<br>
+                                Anita Mosur<br>
+                                Robert Mosur</p>
+                        </div>
+                        <div class="stol dziesiaty">
+                            <h4>Stół 10</h4>
+                            <p>Katarzyna Wąsowska<br>
+                                Ewa Wąsowska<br>
+                                Robert Wąsowski<br>
+                                Grażyna Wąsowska<br>
+                                Sławomir Wąsowski<br>
+                                Kamil Wąsowski<br>
+                                Piotr Dobosiewicz<br>
+                                Wacław Dobosiewicz<br>
+                                Małgorzata Grebowska - Choinska<br>
+                                Piotr Choinski</p>
+                        </div>
+                    </div>   
+                    <div class="pop" id="location" hidden>
+                        This is my location element.
+                    </div>  
+                    <div class="pop" id="contacts" hidden>
+                        This is my contacts element.
                     </div>
-                </div>   
-                <div class="pop" id="location" hidden>
-                    This is my location element.
-                </div>  
-                <div class="pop" id="contacts" hidden>
-                    This is my contacts element.
                 </div>
-            </div>
-           
-        </div>
-        <div class="loteria">
-            <span class="heading">Zagraj</span>
-            <div class="instrukcja">
-            <p>Przedstawiamy weselne wyzwania<br>zasady są proste:</p>
-            <ol>
-                <li>Wylosuj zadanie (zrób screena dla pewności)</li>
-                <li>Wykonaj je</li>
-                <li>Zrób zdjęcie na dowód</li>
-            </ol>
-            <p>Pierwsze trzy osoby które wykonają 6 zadań - WYGRYWA!</p>
-            <h4>Do dzieła</h4>
-            </div>
-            <button onclick='display()' id="lottery">Losuj</button>
-            <form>
-                <p id="message"></p>
-            </form>
+            
         </div>
         
-    </div>
-    <div class="default">
-        <p id="dziekujemy">Dziękujemy</p>
-        <p id="przybycie">Za przybycie</p>
+        <div class="loteria">
+                <span class="heading">Zagraj</span>
+                <div class="instrukcja">
+                <p>Przedstawiamy weselne wyzwania<br>zasady są proste:</p>
+                <ol>
+                    <li>Wylosuj zadanie (zrób screena dla pewności)</li>
+                    <li>Wykonaj je</li>
+                    <li>Zrób zdjęcie na dowód</li>
+                </ol>
+                <p>Pierwsze trzy osoby które wykonają 6 zadań - WYGRYWA!</p>
+                <h4>Do dzieła</h4>
+                </div>
+                <button onclick='display()' id="lottery">Losuj</button>
+                <form>
+                    <p id="message"></p>
+                </form>
+        </div>    
+        
+        <div class="default">
+            <p id="dziekujemy">Dziękujemy</p>
+            <p id="przybycie">Za przybycie</p>
+        </div>
     </div>
 </body>
 </html>
