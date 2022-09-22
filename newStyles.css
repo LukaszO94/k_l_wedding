@@ -6,9 +6,9 @@
 body {
    /* background: rgb(0,106,78);
 background: linear-gradient(180deg, rgba(0,106,78,1) 0%, rgba(86,130,139,0.7665660014005602) 68%, rgba(255,255,255,1) 100%);*/
-background-color: #254636;
+background-color: white;
 
-height: 200vh;
+
 
 }
 nav {
@@ -24,32 +24,43 @@ nav {
     border-bottom: 1px solid goldenrod;
     /*background: rgb(242,238,238);
 background: radial-gradient(circle, rgba(242,238,238,1) 58%, rgba(233,233,233,0.9766500350140056) 70%, rgba(211,240,233,1) 100%);*/
-background-color: rgb(78, 109, 65);
-color: rgb(177, 142, 54);
+background-color: rgb(163 186 153);
+color: #ece5c1;
 }
 nav ul {
     display: flex;
-    gap: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    gap: 1vw;
+    margin: 0 auto;
     flex-shrink: 2;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    overflow: visible;
 }
 nav ul li {
+    display: flex;
+    justify-content: center;
     list-style: none;
+    width: 5vw;
+    margin: 0 auto;
+
 }
 
 nav ul li button {
     all: unset;
     font-size: 3vw;
 }
+nav ul li button:hover {
+    all: unset;
+    font-size: 3vw;
+    color: rgb(205, 174, 93);
+}
 .logo {
     font-size: 3vw;;
     font-family: 'Parisienne', cursive;
     font-size: 4vw;
     border: 1px solid rgb(177, 142, 54);
-    border-radius: 48%;
+    border-radius: 10%;
     padding: 0 5vw;
-    margin-bottom: 1vw;
 }
 .wrapper{
     position: relative;
@@ -60,6 +71,7 @@ nav ul li button {
 display: flex;
 justify-content: center;
 align-items: center;
+margin-top: 3vw;
 }
 
 .default {
@@ -78,21 +90,82 @@ align-items: center;
 }
 #schedule {
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    text-align: center;
+    background-color: rgb(163 186 153);
+    border: 2px solid rgba(255, 217, 0, 0.55);
+    border-radius: 10px;
+    filter: drop-shadow(0 3px 5px #ece5c1);
+    width: 70%;
+    margin: 5vw auto;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    color: #ece5c1;
+}
+#schedule .top {
+    font-size: 7vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+#schedule .time {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 3vw;
+    margin-top: 4vw;
+    margin-bottom: 1vw;
+}
+#schedule .pl {
+    font-size: 2.5vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    padding-bottom: 1vw;
+    margin-bottom: 1vw;
+    border-bottom: 1px solid #ece5c1;
+}
+#schedule .eng {
+    font-size: 2vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-style: italic;
 }
 #tables {
     display: none;
     justify-content: center;
     align-content: center;
+    gap: 1vw;
+    flex-wrap: wrap;
+    flex-shrink: 0;
 }
 .stol {
+    min-width: 40%;
+    align-items: center;
     text-align: center;
-    font-size: 3vh;
-    background-color: #E1E6CE;
-    border: 2px solid seagreen;
-    padding: 4vw;
-    border-radius: 15px;
+    font-size: 3vw;
+    background-color: rgb(163 186 153);
+    border: 2px solid rgba(255, 217, 0, 0.55);
+    border-radius: 10px;
+    filter: drop-shadow(0 3px 5px #ece5c1);
+    padding: 1vw 3vw;
+    color: #ece5c1;
+}
+.stol h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 5vw;
+    font-style: italic;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+.stol p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 3vw;
+}
+.podwojne {
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
 }
 #dziekujemy {
     font-size: 10vw;
@@ -124,21 +197,24 @@ align-items: center;
     margin: 5vw auto;
     list-style-position: inside;
     font-family: 'Noto Serif JP', serif;
-    color: rgb(50, 43, 23);
-    background-color: rgb(78, 109, 65);
+    color: #ece5c1;
+    background-color: rgb(163 186 153);
     border: 2px solid rgba(255, 217, 0, 0.55);
     border-radius: 10px;
-    filter: drop-shadow(0 0 15px rgb(17, 15, 10));
+    filter: drop-shadow(0 3px 5px #ece5c1);
 }
 .heading {
     font-size: 7vw;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 #message {
     display: flex;
     align-items: center;
+    text-align: center;
     height: 8vw;
-    background-color: #254636;
+    background-color: white;
     justify-content: center;
     font-size: 3vw;
     font-weight: bold;
@@ -146,6 +222,7 @@ align-items: center;
     border: 2px solid rgba(255, 217, 0, 0.55);
     border-radius: 5px;
     color: rgb(177, 142, 54);
+    font-family: 'Montserrat', sans-serif;
 }
 .instrukcja {
     display: flex;
@@ -153,6 +230,8 @@ align-items: center;
     font-weight: 700;
     margin: 1vw auto;
     gap: 0.5vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
 }
 .loteria button {
     all:unset;
@@ -165,6 +244,8 @@ align-items: center;
     width: 20vw;
     margin-top: 2vw;
     margin-bottom: 2vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
 }
 .loteria button:hover {
     background-color: rgba(85, 107, 47, 0.708);

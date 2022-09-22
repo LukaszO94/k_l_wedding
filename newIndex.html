@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./newStyles.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><button onclick="myFunction1()" id="Schedule">&nbsp;Schedule&nbsp;</button></li>
+            <li><button onclick="myFunction2()" id="Tables">&nbsp;Tables&nbsp;</button></li>
+        </ul>
+        <span class="logo">Klaudia & Łukasz</span>
+        <ul>
+            <li><button onclick="myFunction3()" id="Location">&nbsp;Location&nbsp;</button></li>
+            <li><button onclick="myFunction4()" id="Contacts">&nbsp;Contacts&nbsp;</button></li>
+        </ul>
+    </nav>
+    <script src="./javascript.js"></script>
+    <div class="wrapper">
+        
+        <div class="content"></div>
+            <div class="popups">
+                <div class="pop" id="schedule" hidden>
+                    This is my schedule element.
+                </div>   
+                <div class="pop" id="tables" hidden>
+                    This is my tables element.
+                </div>   
+                <div class="pop" id="location" hidden>
+                    This is my location element.
+                </div>  
+                <div class="pop" id="contacts" hidden>
+                    This is my contacts element.
+                </div>
+            </div>
+            <div class="default">
+                <p id="dziekujemy">Dziękujemy</p>
+                <p id="przybycie">Za przybycie</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
