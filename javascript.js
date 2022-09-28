@@ -68,7 +68,7 @@ function myFunction1() {
   function task() {
     const zad = ['1. Wznieś toast za pare młodą',
     '2. Polej wódkę przy swoim stole',
-    '3. Zatańcz z druhną/druhem',
+    '3. Zatańcz z druhną/drużbą',
     '4. Przysiądź się do innego stolika',
     '5. Zrób sobie zdjęcie z Panną Młodą',
     '6. Zrób sobie zdjęcie z Panem Młodym',
@@ -80,7 +80,12 @@ function myFunction1() {
     '12. Przynieś swojej partnerce/partnerowi coś do picia',
     '13. Wysciskaj pana młodego',
     '14. Uściśnij dłoń ojcom pary młodej', 
-    '15. Zatańcz z osobą którą dziś poznałeś/poznałaś'];
+    '15. Zatańcz z osobą którą dziś poznałeś/poznałaś',
+    '16. Zatańcz kaczuszki do aktualnej piosenki', 
+    '17. Zamień się marynarką z sąsiadem', 
+    '18. Podejdź do osoby której nie znasz i przedstaw się', 
+    '19. Napij się drinka którego nigdy jeszcze nie próbowałeś',
+    '20. Policz wszystkie krawaty przy stole'];
     const picked = zad[randomNum(zad.length)];
     return picked;
     alert('picked');
