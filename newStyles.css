@@ -5,8 +5,10 @@
 }
 body {
    /* background: rgb(0,106,78);
-background: linear-gradient(180deg, rgba(0,106,78,1) 0%, rgba(86,130,139,0.7665660014005602) 68%, rgba(255,255,255,1) 100%);*/
-background-color: #f2f6ea;
+background: linear-gradient(180deg, rgba(0,106,78,1) 0%, rgba(86,130,139,0.7665660014005602) 68%, rgba(255,255,255,1) 100%);
+background-color: #f2f6ea;*/
+background: rgb(242,246,234);
+background: linear-gradient(180deg, rgba(242,246,234,1) 75%, rgba(255,255,255,1) 88%);
 }
 nav {
     position: fixed;
@@ -267,4 +269,9 @@ margin-top: 3vw;
 }
 .loteria button:hover {
     background-color: rgba(85, 107, 47, 0.708);
+}
+
+img {
+    position: fixed;
+    margin-bottom: 0;
 }
