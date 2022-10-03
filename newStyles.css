@@ -9,6 +9,11 @@ background: linear-gradient(180deg, rgba(0,106,78,1) 0%, rgba(86,130,139,0.76656
 background-color: #f2f6ea;*/
 background: rgb(242,246,234);
 background: linear-gradient(180deg, rgba(242,246,234,1) 13%, rgba(255,255,255,1) 88%);
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 110vh;
+
 }
 nav {
     position: fixed;
@@ -16,15 +21,12 @@ nav {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
-   /* background-color: #006a4e;*/
-
     align-items: center;
     z-index: 1;
     border-bottom: 1px solid goldenrod;
-    /*background: rgb(242,238,238);
-background: radial-gradient(circle, rgba(242,238,238,1) 58%, rgba(233,233,233,0.9766500350140056) 70%, rgba(211,240,233,1) 100%);*/
-background-color: rgb(163 186 153);
-color: #ece5c1;
+    background-color: rgb(163 186 153);
+    color: #ece5c1;
+    height: 8vh;
 }
 nav ul {
     display: flex;
@@ -74,10 +76,9 @@ nav ul li button:hover {
 }
 
 .content {
-display: flex;
-justify-content: center;
-align-items: center;
-margin-top: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .default {
@@ -283,5 +284,5 @@ img {
     width: 100%;
     margin-bottom: 0;
     margin-top: 3vh;
-
+    align-self: flex-end;
 }
