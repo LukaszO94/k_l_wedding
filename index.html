@@ -11,13 +11,13 @@
     <title>Ślub Klaudia & Łukasz</title>
 </head>
 <body>
-
+<header></header>
     <nav>
         <ul>
             <li><button onclick="myFunction1()" id="Schedule">&nbsp;Schedule&nbsp;</button></li>
             
         </ul>
-        <span class="logo">K & Ł</span>
+        <span class="logo" link="header">K & Ł</span>
         <ul>
             <li><button onclick="myFunction2()" id="Tables" onclick="guestSit()">&nbsp;Tables&nbsp;</button></li>
             <!--<li><button onclick="myFunction3()" id="Location">&nbsp;Location&nbsp;</button></li>
@@ -33,51 +33,82 @@
                     <div class="pop" id="schedule" hidden>
                         <h2 class="top">Party Schedule</h2>
                         <h3 class="time">19:00</h3>
-                        <p class="pl">Start, zupa oraz pierwsze danie<br>Rosół z kluskami<br>Kotlet de volaille</p>
-                        <p class="eng">Start, dish and first course<br>Chicken soup<br>de volaille</p>
+                        <p class="pl">Start, zupa oraz pierwsze danie</p>
+                        <p class="eng">Start, soup and first course</p>
                         <h3 class="time">20:00</h3>
                         <p class="pl">Pierwszy Taniec</p>
                         <p class="eng">First dance</p>
                         <h3 class="time">21:00</h3>
                         <p class="pl">Drugie danie</p>
                         <p class="eng">Second course</p>
+                        <h3 class="time">23:30</h3>
+                        <p class="pl">Tort</p>
+                        <p class="eng">Cake</p>
+                        <h3 class="time">00:00</h3>
+                        <p class="pl">Oczepiny</p>
+                        <p class="eng">Wedding Games</p>
                     </div>   
                     <div class="pop" id="tables" hidden>
-                        <div class="stol pierwszy" id="gosc">
+                        <div class="stol p pierwszy" id="gosc">
                             <h4>Stół 1</h4>
-                            <p>Dorota Wąsowska<br>Piotr Wąsowski<br>Katarzyna Ochnio<br>Grzegorz Tomasik<br>Igor Ochnio<br>Magda Tadych<br>Helena Ochnio<br>Zuzia Ochnio<br>Michał Giziński<br>Scott Callaway</p>
-                        </div>
-                        <div class="stol drugi">
+                            <p>Małgorzata Głuchowska<br>
+                                Michał Głuchowski<br>
+                                Julia Głuchowska<br>
+                                Urszula Głuchowska<br>
+                                Małgorzata Wąsowska<br>
+                                Andrzej Wąsowski<br>
+                                Aleksandra Wąsowska<br>
+                                Zuzanna Wąsowska<br>
+                                Sylwia Gąsiorowska<br>
+                                Paweł Gąsiorowski<br>
+                
+                                </p>
+                            </div>
+                        <div class="stol p drugi">
                             <h4>Stół 2</h4>
-                            <p>Karolina Ochnio<br>
-                                Julia Ochnio<br>
-                                Edmund Ochnio<br>
-                                Paulina Sowińska<br>
-                                Piotr Sowiński<br>
-                                Ania O'Brien<br>
-                                Robert Kiliszek<br>
-                                Alicja Kiliszek</p>
+                            <p>Katarzyna Wąsowska<br>
+                                Ewa Wąsowska<br>
+                                Robert Wąsowski<br>
+                                Grażyna Wąsowska<br>
+                                Sławomir Wąsowski<br>
+                                Kamil Wąsowski<br>
+                                Edyta Niedźwiadek<br>
+                                Edwin Niedźwiadek<br>
+                                Małgorzata Grebowska - Choińska<br>
+                                Piotr Choiński</p>
                         </div>
-                        <div class="stol trzeci">
+                        <div class="stol p trzeci">
                             <h4>Stół 3</h4>
-                            <p>Magda Siwek<br>
-                                Jan Siwek<br>
-                                Agnieszka Kruk<br>
-                                Marcin Kruk<br>
-                                Natalia Kruk<br>
-                                Grześ Kruk<br>
-                                Artur Kruk<br>
-                                Ania Przepadło<br>
-                                Damian Przepadło<br>
-                                Franek Przepadło<br>
-                                Ola Przepadło<br>
-                                Zosia Przepadło<br>
-                                Basia Przepadło</p>
+                            <p>Anna Florowska<br>
+                                Irek Florowski<br>
+                                Aneta Kalicka<br>
+                                Jacek Kalicki<br>
+                                Halina Pierzchała<br>
+                                Krzysztof Pierzchała<br>
+                                Ewa Patoka<br>
+                                Janusz Patoka<br>
+                                Lucyna Jaczewska<br>
+                                Zbyszek Wojtasik</p>
                         </div>
-                        <div class="stol czwarty">
+                        <div class="stol p czwarty">
                             <h4>Stół 4</h4>
+                        <p>Dominika Maszner<br>
+                            Grzegorz Maszner<br>
+                            Franek Maszner<br>
+                            Filip Maszner<br>
+                            Magda Dobosiewicz<br>
+                            Andrzej Dobosiewicz<br>
+                            Anna Felczak<br>
+                            Zuzia Felczak<br>
+                            Kuba Felczak<br>
+                            Eliza Grabek<br>
+                            Waldemar Świerczewski<br>
+                            Anita Mosur</p>
+                            </div>
+                        <div class="stol piaty">
+                            <h4>Stół 5</h4>
                             <div class="podwojne">
-                            <p>Aleksandra Bylina<br>
+                            <p class="pol">Aleksandra Bylina<br>
                                 Piotr Łuć<br>
                                 Daria Kozłowska<br>
                                 Marcelina Pieniak<br>
@@ -93,7 +124,7 @@
                                 Martyna Dobosiewicz<br>
                                 Oliwia Dobosiewicz<br>
                                 Osoba Towarzysząca</p>
-                                <p>
+                                <p class="pol">
                                 Daria Pieniak<br>
                                 Bartosz Dragan<br>
                                 Ula Szczęsna<br>
@@ -113,49 +144,10 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="stol piaty">
-                            <h4>Stół 5</h4>
-                            <div class="podwojne">
-                                <p>Katarzyna Marciniak<br>
-                                    Maciej Świerczyński<br>
-                                    Paulina Łopieńska<br>
-                                    Łukasz Godlewski<br>
-                                    Justyna Michalik<br>
-                                    Jakub Michalik<br>
-                                    Julia Parszutas<br>
-                                    Jan Smolski<br>
-                                    Marlena Janik<br>
-                                    Kamil Janik<br>
-                                    Ola Wąsowska-Jajczak<br>
-                                    Jakub Jajczak<br>
-                                    Kuba Wąsowski<br>
-                                    Osoba Towarzysząca<br>
-                                    Ewelina Wąsowska<br>
-                                    Osoba Towarzysząca
-                                    <p>
-                                        Magdalena Kaczmarek<br>
-                                        Bartek Dąbrowski<br>
-                                        Angelika Maruszewska<br>
-                                        Arkadiusz Sajnog<br>
-                                        Łukasz Rosa<br>
-                                        Maciek Wysokiński<br>
-                                        Damian Jaczewski<br>
-                                        Osoba Towarzysząca<br>
-                                        Emilia Florowska<br>
-                                        Osoba Towarzysząca<br>
-                                        Patryk Florowski<br>
-                                        Osoba Towarzysząca<br>
-                                        Kamil Pierzchałą<br>
-                                        Ewelina Włudarkiewicz<br>
-                                        Ewelina Popławska<br>
-                                        Arek Popławski
-                                    </p>
-                                </div>
-                        </div>
                         <div class="stol szosty">
                             <h4>Stół 6</h4>
                             <div class="podwojne">
-                                <p>Katarzyna Marciniak<br>
+                                <p class="pol">Katarzyna Marciniak<br>
                                     Maciej Świerczyński<br>
                                     Paulina Łopieńska<br>
                                     Łukasz Godlewski<br>
@@ -171,7 +163,7 @@
                                     Osoba Towarzysząca<br>
                                     Ewelina Wąsowska<br>
                                     Osoba Towarzysząca
-                                    <p>
+                                    <p class="pol">
                                         Magdalena Kaczmarek<br>
                                         Bartek Dąbrowski<br>
                                         Angelika Maruszewska<br>
@@ -191,35 +183,18 @@
                                     </p>
                                 </div>
                         </div>
-                        <div class="stol siodmy">
+                        <div class="stol p siodmy">
                             <h4>Stół 7</h4>
-                            <p>Dominika Maszner<br>
-                                Grzegorz Maszner<br>
-                                Franek Maszner<br>
-                                Filip Maszner<br>
-                                Magda Dobosiewicz<br>
-                                Andrzej Dobosiewicz<br>
-                                Anna Felczak<br>
-                                Zuzia Felczak<br>
-                                Kuba Felczak<br>
-                                Eliza Grabek<br>
-                                Waldemar Świerczewski</p>
+                                <p>Karolina Ochnio<br>
+                                Julia Ochnio<br>
+                                Edmund Ochnio<br>
+                                Paulina Sowińska<br>
+                                Piotr Sowiński<br>
+                                Robert Kiliszek<br>
+                                Alicja Kiliszek</p>
                         </div>
-                        <div class="stol osmy">
+                        <div class="stol p osmy">
                             <h4>Stół 8</h4>
-                            <p>Anna Florowska<br>
-                                Irek Florowski<br>
-                                Aneta Kalicka<br>
-                                Jacek Kalicki<br>
-                                Halina Pierzchała<br>
-                                Krzysztof Pierzchała<br>
-                                Ewa Patoka<br>
-                                Janusz Patoka<br>
-                                Lucyna Jaczewska<br>
-                                Zbyszek Wojtasik</p>
-                        </div>
-                        <div class="stol dziewiaty">
-                            <h4>Stół 9</h4>
                             <p>Barbara Dobosiewicz<br>
                                 Antoni Dobosiewicz<br>
                                 Zygmunt Sarnecki<br>
@@ -228,35 +203,30 @@
                                 Grażyna Kacprzyk<br>
                                 Wanda Florowski<br>
                                 Adam Florowska<br>
-                                Irena Wąsowska</p>
-                        </div>
-                        <div class="stol dziesiaty">
-                            <h4>Stół 10</h4>
-                            <p>Małgorzata Głuchowska<br>
-                                Michał Głuchowski<br>
-                                Julia Głuchowska<br>
-                                Urszula Głuchowska<br>
-                                Małgorzata Wąsowska<br>
-                                Andrzej Wąsowski<br>
-                                Aleksandra Wąsowska<br>
-                                Zuzanna Wąsowska<br>
-                                Sylwia Gąsiorowska<br>
-                                Paweł Gąsiorowski<br>
-                                Anita Mosur<br>
-                                Robert Mosur</p>
-                        </div>
-                        <div class="stol jedenasty">
-                            <h4>Stół 11</h4>
-                            <p>Katarzyna Wąsowska<br>
-                                Ewa Wąsowska<br>
-                                Robert Wąsowski<br>
-                                Grażyna Wąsowska<br>
-                                Sławomir Wąsowski<br>
-                                Kamil Wąsowski<br>
+                                Irena Wąsowska<br>
                                 Piotr Dobosiewicz<br>
                                 Wacław Dobosiewicz<br>
-                                Małgorzata Grebowska - Choinska<br>
-                                Piotr Choinski</p>
+                                Ewa Wąsowska</p>
+                        </div>
+                        <div class="stol p dziewiaty">
+                            <h4>Stół 9</h4>
+                            <p>Magda Siwek<br>
+                                Jan Siwek<br>
+                                Agnieszka Kruk<br>
+                                Marcin Kruk<br>
+                                Natalia Kruk<br>
+                                Grześ Kruk<br>
+                                Artur Kruk<br>
+                                Ania Przepadło<br>
+                                Damian Przepadło<br>
+                                Franek Przepadło<br>
+                                Ola Przepadło<br>
+                                Zosia Przepadło<br>
+                                Basia Przepadło</p>
+                        </div>
+                        <div class="stol p dziesiaty">
+                            <h4>Stół 10</h4>
+                                <p>Dorota Wąsowska<br>Piotr Wąsowski<br>Katarzyna Ochnio<br>Grzegorz Tomasik<br>Igor Ochnio<br>Magda Tadych<br>Helena Ochnio<br>Zuzia Ochnio<br>Michał Giziński<br>Scott Callaway</p>
                         </div>
                     </div>   
                     <div class="pop" id="location" hidden>
@@ -277,8 +247,9 @@
                     <li>Wylosuj zadanie (zrób screena dla pewności)</li>
                     <li>Wykonaj je</li>
                     <li>Zrób zdjęcie na dowód</li>
+                    <li>Po wykonaniu 6 zadań zgłoś się do Świadka</li>
                 </ol>
-                <p>Pierwsze trzy osoby które wykonają 6 zadań - WYGRYWA!</p>
+                <p>Pierwsze trzy osoby które wykonają wszystkie kroki - WYGRYWA!</p>
                 <h4>Do dzieła</h4>
                 </div>
                 <button onclick='display()' id="lottery">Losuj</button>

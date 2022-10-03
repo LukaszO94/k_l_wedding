@@ -92,7 +92,7 @@ margin-top: 3vw;
 }
 .pop {
     display: none;
-    margin-top: 3vw;
+    margin-top: 2vw;
 }
 #schedule {
     flex-direction: column;
@@ -103,7 +103,7 @@ margin-top: 3vw;
     border-radius: 10px;
     filter: drop-shadow(0 3px 5px #ece5c1);
     width: 70%;
-    margin: 5vw auto;
+    margin: 2vw auto;
     padding-top: 4vw;
     padding-bottom: 4vw;
     color: #ece5c1;
@@ -117,12 +117,12 @@ margin-top: 3vw;
 #schedule .time {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    font-size: 3vw;
+    font-size: 3.5vw;
     margin-top: 4vw;
     margin-bottom: 1vw;
 }
 #schedule .pl {
-    font-size: 2.5vw;
+    font-size: 3vw;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     padding-bottom: 1vw;
@@ -130,7 +130,7 @@ margin-top: 3vw;
     border-bottom: 1px solid #ece5c1;
 }
 #schedule .eng {
-    font-size: 2vw;
+    font-size: 2.5vw;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-style: italic;
@@ -139,7 +139,7 @@ margin-top: 3vw;
     display: none;
     justify-content: center;
     align-content: center;
-    gap: 1vw;
+    gap: 1.5vw;
     flex-wrap: wrap;
     flex-shrink: 0;
 }
@@ -156,7 +156,11 @@ margin-top: 3vw;
     padding: 1vw 3vw;
     color: #ece5c1;
 }
-.czwarty, .piaty, .szosty{
+.p {
+    min-width: 40%;
+    max-width: 40%;
+}
+.piaty, .szosty{
     min-width: 88%;
     max-width: 90%;
     gap: 2vw;
@@ -181,6 +185,9 @@ margin-top: 3vw;
     gap: 3vw;
     text-align: center;
 }
+.pol {
+    width: 40%;
+}
 #dziekujemy {
     font-size: 10vw;
     font-family: 'Parisienne', cursive;
@@ -204,7 +211,7 @@ margin-top: 3vw;
 }
 
 .loteria {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     width: 70%;
@@ -227,7 +234,7 @@ margin-top: 3vw;
     display: flex;
     align-items: center;
     text-align: center;
-    height: 8vw;
+    height: 12vw;
     background-color: #f2f6ea;
     justify-content: center;
     font-size: 3vw;
@@ -241,11 +248,12 @@ margin-top: 3vw;
 .instrukcja {
     display: flex;
     flex-direction: column;
-    font-size: 2vw;
-    margin: 2vw auto;
+    font-size: 4vw;
+    margin: 2vw 2vw;
     gap: 2vw;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
+    font-weight: 600;
+
 }
 .instrukcja ol {
     padding-left: 2vw;
@@ -259,7 +267,7 @@ margin-top: 3vw;
     align-self: center;
     font-size: 4vw;
     font-weight: bold;
-    border: 1px solid rgb(51, 49, 49);
+    border: 1px solid rgba(255, 217, 0, 0.55);
     border-radius: 15px;
     width: 20vw;
     margin-top: 2vw;
