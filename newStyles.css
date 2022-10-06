@@ -212,7 +212,7 @@ nav ul li button:hover {
 }
 
 .loteria {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     width: 70%;
